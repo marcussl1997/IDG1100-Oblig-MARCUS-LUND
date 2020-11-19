@@ -1,0 +1,13 @@
+1. A processing unit, a control unit, memory storage, external mass storage and input and output mechanics.
+
+2. The user space refers to all code that runs outside the operating system´s kernel. It also refers to
+the various programs and libraries that the operating system uses to interact with the kernel. Which is 
+software that performs input/output and manipulates file system objects and application software etc.
+
+3. Shell is a powerful tool for manipulating data and executing several applications under certain conditions.
+
+4.  The system default shell is defined in /etc/default/useradd file. Your default shell is defined in /etc/passwd
+file. You can change it by chsh command. The $SHELL variables usually stores the current shell executable path.
+
+5. The shell´s main task is to read your terminal command lines and execute the command to the proper program.
+

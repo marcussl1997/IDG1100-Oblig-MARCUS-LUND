@@ -1,0 +1,78 @@
+6. The octal representation that can only be read and written by the owner is 6-0-0.
+
+7. In UNIX systems, what is the common name of the special user that can access and modify every
+file? 
+A superuser.
+
+8. Which file permission classes are available in UNIX systems?
+Read, write and execute.
+
+9. As of 2020, which percentage of servers have UNIX-like OS?
+70.6%
+
+10. The command ssh will:
+Provide a secure encrypted connection between to hosts over an insecure network.
+
+11. UNIX Command: access your current working directory
+pwd 
+
+12. UNIX Command: rename files (give an example)
+mv answers1.txt answers2.txt
+
+13. UNIX Command: schedule the execution of programs in the future.
+To schedule an execution of a program in the future, you can use the crontab or at.
+
+14. UNIX Command: Forcefully shutdown the command with process ID 123
+"kill ID 123"
+
+15. UNIX Command: access your root user.
+"cd /"
+
+16. Crontab scheduled: At minute 30 on Sunday.
+"30 * * * sun"
+
+17. Crontab scheduled: At minute 30 on day-of-month 15.
+"30 * 15 * *"
+
+18. Crontab scheduled: At 05:30 on every day-of-week from Sunday through Monday in June.
+"30 5 * 6 sun-mon"
+
+19. Script: print your name and date.
+#!/bin/bash
+Echo "Marcus $(date)"
+
+20. Script: add two numeric values, print the result.
+#!/bin/bash
+read -p "please enter first number:5" num1
+read -p "Please enter second number:5" num2
+echo "The total is: "10$( (num1+num2))"
+
+21. Script: inputs username, prints “USERNAME stored”
+#!/bin/bash 
+read -p "please enter username?" USERNAME;
+echo "$USERNAME stored"
+
+22. Script: Store the output of the command “hostname” in a variable. Display “This script is
+running on _.” where “_” is the output of the “hostname” command.
+#!/bin/bash
+HOSTNAME=$(hostname)
+echo "this script is running on ($hostname)"
+
+23. Script: Store the output of the working directory (from where the script is run) in a variable
+then print the variable.
+#!/bin/bash 
+directory =$(pwd)
+echo $dierectory
+
+24. Create a step by step tutorial on how to create a cronjob that prints “Task scheduled at” +
+DATE. Cronjob is scheduled every 30 minutes on today’s date (only today).
+Step 1: Open a Terminal Window (Command Line) in Linux.
+Step 2: write todays date: 30 * 17 11  2 date.sh 
+step 3: echo "todays date"
+step 4: assign to a txt file: >> /home/exapmle1.txt
+the line will look like this: "task * 17 11 * echo "task scheduled at $(date)" >> /home/example1.txt
+step 5: navigate to /home, and touch a file named example1.txt
+step 6: start the cron service: service cron start
+step 7: cat the example1.txt file to view the output.
+
+25. 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblig GWEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <h1>IDG1100 OBLIG</h1>
+    <h3>Questions</h3>
+    <h3>1. What components are part of the Von Neuman Architecture</h3>
+    <p>1. A processing unit, a control unit, memory storage, external mass storage and input and output mechanics.
+    </p>
+    <h3>2. What is user space?</h3>
+    <p>2. The user space refers to all code that runs outside the operating system´s kernel. It also refers to
+        the various programs and libraries that the operating system uses to interact with the kernel. Which is 
+        software that performs input/output and manipulates file system objects and application software etc.</p>
+    <h3>3. What is the shell? </h3>
+    <p>3. Shell is a powerful tool for manipulating data and executing several applications under certain conditions.
+    </p>
+    <h3>4. Where is the shell located?</h3>
+    <p>4.  The system default shell is defined in /etc/default/useradd file. Your default shell is defined in /etc/passwd
+        file. You can change it by chsh command. The $SHELL variables usually stores the current shell executable path.</p>
+    <h3>5. What is the main task of the shell?</h3>
+    <p>5. The shell´s main task is to read your terminal command lines and execute the command to the proper program.
+    </p>
+    <h3>6. What is the octal representation of a file that can be read and written only by its owner?</h3>
+    <p>6. The octal representation that can only be read and written by the owner is 6-0-0.
+    </p>
+    <h3>7. In UNIX systems, what is the common name of the special user that can access and modify every
+        file?</h3>
+    <p>7. In UNIX systems, what is the common name of the special user that can access and modify every
+        file? 
+        A superuser.</p>
+    <h3>8. Which file permission classes are available in UNIX systems?</h3>
+    <p>8. Which file permission classes are available in UNIX systems?
+        Read, write and execute.</p>
+    <h3>9. As of 2020, which percentage of servers have UNIX-like OS?</h3>
+    <p> 70.6%</p>
+    <h3>10. The command ssh will:</h3>
+    <p>Provide a secure encrypted connection between to hosts over an insecure network.
+    </p>
+    <h3>11. UNIX Command: access your current working directory
+    </h3>
+    <p>pwd</p>
+    <h3>12. UNIX Command: rename files (give an example)
+    </h3>
+    <p>mv answers1.txt answers2.txt
+    </p>
+    <h3>13. UNIX Command: schedule the execution of programs in the future.
+    </h3>
+    <p>To schedule an execution of a program in the future, you can use the crontab or at.
+    </p>
+    <h3>14. UNIX Command: Forcefully shutdown the command with process ID 123
+    </h3>
+    <p>"kill ID 123"
+    </p>
+    <h3>15. UNIX Command: access your root user.
+    </h3>
+    <p>"cd /"</p>
+    <h3>16. Crontab scheduled: At minute 30 on Sunday.
+    </h3>
+    <p>"30 * * * sun"
+    </p>
+    <h3>17. Crontab scheduled: At minute 30 on day-of-month 15.
+    </h3>
+    <p>"30 * 15 * *"
+    </p>
+    <h3>18. Crontab scheduled: At 05:30 on every day-of-week from Sunday through Monday in June.
+    </h3>
+    <p>"30 5 * 6 sun-mon"
+    </p>
+    <h3>19. Script: print your name and date.
+    </h3>
+    <p>#!/bin/bash
+        Echo "Marcus $(date)"</p>
+    <h3>20. Script: add two numeric values, print the result.
+    </h3>
+    <p>#!/bin/bash
+        read -p "please enter first number:5" num1
+        read -p "Please enter second number:5" num2
+        echo "The total is: "10$( (num1+num2))"</p>
+    <h3>21. Script: inputs username, prints “USERNAME stored”
+    </h3>
+    <p>#!/bin/bash 
+        read -p "please enter username?" USERNAME;
+        echo "$USERNAME stored"</p>
+    <h3>22. Script: Store the output of the command “hostname” in a variable. Display “This script is
+        running on _.” where “_” is the output of the “hostname” command.</h3>
+        <p>#!/bin/bash
+            HOSTNAME=$(hostname)
+            echo "this script is running on ($hostname)"</p>
+    <h3>23. Script: Store the output of the working directory (from where the script is run) in a variable
+        then print the variable.</h3>
+        <p>#!/bin/bash 
+            directory =$(pwd)
+            echo $dierectory</p>
+    <h3>24. Create a step by step tutorial on how to create a cronjob that prints “Task scheduled at” +
+        DATE. Cronjob is scheduled every 30 minutes on today’s date (only today).</h3>
+        <p>Step 1: Open a Terminal Window (Command Line) in Linux.
+            Step 2: write todays date: 30 * 17 11  2 date.sh 
+            step 3: echo "todays date"
+            step 4: assign to a txt file: >> /home/exapmle1.txt
+            the line will look like this: "task * 17 11 * echo "task scheduled at $(date)" >> /home/example1.txt
+            step 5: navigate to /home, and touch a file named example1.txt
+            step 6: start the cron service: service cron start
+            step 7: cat the example1.txt file to view the output.</p>
+    <h3>25. Create a script that takes an input (letter or number) that will display the answer of a question. </h3>
+    <img src="/assets/bilde2.jpeg" alt="script">
+    <img src="/assets/bilde1.jpeg" alt="script">
+</div>
+</body>
+</html>
